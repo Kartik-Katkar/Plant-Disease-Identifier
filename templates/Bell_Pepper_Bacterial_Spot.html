@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../static/images/leaf4.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <title>PLANT DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border: 2px solid black;
+        }
+        body{
+            background: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../static/images/pl4.jpg");
+    background-size: cover;
+        }
+        *, *:before, *:after{
+            font-family: 'Poppins', sans-serif;
+        }
+        .text2{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .text a:hover {
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 43.3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: black; color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <h3 style="padding: 15px; background-color: black; color: white;"
+                class="text-center mb-5 content-h1 rounded">
+                Bacterial leaf spot, caused by Xanthomonas campestris pv. vesicatoria, is the most common and destructive disease for peppers in the eastern United States. It is a gram-negative, rod-shaped bacterium that can survive in seeds and plant debris from one season to another.In severe cases, plants may die as it is extremely difficult to find a cure once the disease takes hold.
+            </h3>
+                <br>
+                <p style="background-color: black; color: white; font-size: 1.5rem;">झांथोमोनास कॅम्पेस्ट्रिस pv मुळे होणारे जिवाणू पानांचे ठिपके. vesicatoria, पूर्व युनायटेड स्टेट्स मध्ये मिरपूड साठी सर्वात सामान्य आणि विनाशकारी रोग आहे. हा एक ग्राम-नकारात्मक, रॉड-आकाराचा जीवाणू आहे जो एका हंगामापासून दुसऱ्या हंगामात बियाणे आणि वनस्पतींच्या ढिगाऱ्यांमध्ये टिकून राहू शकतो.गंभीर प्रकरणांमध्ये, झाडे मरतात कारण एकदा रोगाने बरा होणे अत्यंत कठीण असते.
+                </p>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+
+<div class ="text2">
+        <h1> Solution for Disease / रोगाचा उपाय </h1>
+        <p><strong>For bacterial leaf spot, the following methods can be used to reduce the survival, spread and reproduction of bacteria and to minimize the infection of plants: using resistant varieties, seed treatment, foliage treatment and using an integrated strategy.</i></strong></p>
+       
+        <p>बॅक्टेरियाच्या पानांच्या डागांसाठी, जीवाणूंचे अस्तित्व, प्रसार आणि पुनरुत्पादन कमी करण्यासाठी आणि वनस्पतींचे संक्रमण कमी करण्यासाठी खालील पद्धती वापरल्या जाऊ शकतात: प्रतिरोधक जाती, बियाणे उपचार, पर्णसंवर्धन आणि एकात्मिक धोरण वापरणे. 
+        </p>
+    
+    </div>
+    </div>
+
+
+
+    <section>
+
+            <h1 style="padding: 15px; background-color: black; color: white ; font-size: 2rem;"
+                class="text-center my-3 content-h1">
+                Recommended Treatment/उपचार</h1>
+                <p style="padding: 15px; background-color: black; color: white ; font-size: 2rem;">Seed treatment with hot water, soaking seeds for 30 minutes in water pre-heated to 125 F/51 C/गरम पाण्याने बीजप्रक्रिया, बिया 30 मिनिटे आधीपासून 125 F/51 C वर गरम केलेल्या पाण्यात भिजवून ठेवा.</p>
+        </div>
+        <div class="container">
+
+
+            <!-- <div class="container-fluid contents"> -->
+        </div>
+        <div class="text"><a href="/">Go Back</a></div>
+    </section>
+
+</body>
+
+</html>

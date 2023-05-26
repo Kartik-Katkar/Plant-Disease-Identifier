@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAF DISEASE DETECTION</title>
+    <link rel="icon" href="../static/images/leaf4.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1;
+    background: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../static/images/3.jpg");
+    background-size: cover;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
+   }
+  
+  
+ 
+  
+  .about-section {
+    padding: 1px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .about-section h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .container {
+    padding: 0 5px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+
+  .text a:hover {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 43.3em;
+  
+  }
+  .text1 a:hover {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .text1 a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 24em;
+  
+  }
+  .text3 a:hover {
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+
+  .text3 a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 35%;
+  
+  }
+
+  #pic  {
+float: right;    
+ margin: 0 0 0 15px;
+}
+ 
+#pic1  {
+float: left;    
+ margin: 0 0 0 15px;
+}
+</style>
+    <div class="about-section">
+        <h1>Explore Page</h1>
+        <h2 style="text-align:center">Dataset used : Plant Village</h2>
+       
+    </div>
+  <section>
+       <div class="text1"><a href="https://www.kaggle.com/datasets/emmarex/plantdisease?group=owned">Click This to download and get more information on the dataset</a></div>
+
+  </section>
+
+  <img src="../static/images/pic1.png" alt="" width="300" height="300" id="pic" style=" margin-right: 20%; margin-top: 2%;"/>
+  <p style="font-size: 25px; color: white; margin-left: 20%; margin-right: 20%;">For this project we have used plant village dataset. The Plant Village dataset consists of more than 54,000 healthy and unhealthy leaf images divided into 38 categories by species and disease. However, the original dataset is no longer available from the original source, their website (plantvillage.org). Therefore, in this study, the not augmented dataset from Pandian et al. was used. In this dataset, 39 different classes plant leaf and background images are available. The dataset contains 61,486 images. Some of its classes are the various diseases of plants like apple, blueberry, cherry, grapes, corn, orange, peach, pepper, potato, raspberry and soybean. Sample images are shown below.<br><br>For this project we have used CNN method to detect the leaf diseases.
+
+    In training the model, only the most available plant leaves in the Philippines were utilized. The training images include strawberry, peach, bell pepper, Tomato, and cherry. 20 images were used to represent each plant disease and healthy images for specific plant. In total, there are approximately 500 images used for training the model. Included in the dataset are the non-leaf images to enhance the recognition feature of the model.
+    
+    Configuring Convolutional Neural Network: Convolutional neural networks are great for photo tagging and recognizing patterns in image data. Here we will build Convolutional Neural Network in TensorFlow Framework.</p>
+    <br>
+    <img src="../static/images/pic2.jpg" alt="" width="300" height="300" id="pic1" style=" margin-left: 20%; margin-top: 2%; margin-right: 1%;"/>
+  <p style="font-size: 25px; color: white; margin-left: 20%; margin-right: 20%;">There is total five steps involved in Disease detection they are as follows: - 1) image acquisition 2) image preprocessing 3) Image Segmentation 4) Segment Selection 5) Configure NN <br><br>
+    Image Acquisition: We need various images of leaves to train the model. So, we acquire high quality images from different sources and categorize them into different categories. For now, we will be using Plant Village dataset from Kaggle. It has up to 15 different directories and having up to 20K images. Hence, we can directly train our model with this dataset and use for predictions. Later we also can add different images and train model again to improve model<br>
+
+Image Preprocessing: The aim of Image pre-processing is an improvement of the image data that suppresses unwilling distortions or enhances some image features important for further processing, although geometric transformations of images (e.g., rotation, scaling, translation) are classified among pre-processing methods. The aim of image processing is to enhance the image data (features) by suppressing unwanted distortions and/or enhancement of some important image features in order that our models can benefit from this improved data to make computation on data.<br>
+
+In this phase we usually improve image quality and we make the color correction to highlight feature so that they could be simply catch by the classifier. We also reduce the size of image to certain limit so that we can convert the image to array and feed it to neural network Image is pre-processed to enhance the image data that suppress undesired distortions, enhances some image features important for further processing and analysis task. It includes color space conversion, image enhancement.
+
+Image Segmentation: Image segmentation is process of finding boundaries of objects in images and enhance those boundaries in such way that they can become more highlighted and could be capture immediately by classifier.<br>
+
+Image segmentation is best technique to improve image and characteristics of image. It also works well on low resolution and low-quality images.
+    
+   
+  </p>
+  <div class="text3"><a href="https://docs.google.com/document/d/1zI8lp376cztcAzO1KSiCHnI1gS-OaSKI/edit?usp=sharing&ouid=101443479767083376595&rtpof=true&sd=true" target="_blank">Click here to read full documentation</a></div>
+    <div class="text"><a href="/">Go Back</a></div>
+
+</body>
+
+</html>

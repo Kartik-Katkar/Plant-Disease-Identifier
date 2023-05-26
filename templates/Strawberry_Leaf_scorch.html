@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../static/images/leaf4.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <title>PLANT DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            
+            margin: 10px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border: 2px solid black;
+        }
+        body{
+            background: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../static/images/pl4.jpg");
+    background-size: cover;
+        }
+        *, *:before, *:after{
+            font-family: 'Poppins', sans-serif;
+        }
+        .text2{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .text a:hover {
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 43.3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: black; color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <h3 style="padding: 15px; background-color: black; color: white;"
+                class="text-center mb-5 content-h1 rounded">
+                Diplocarpon earlianum is a fungus that causes leaf scorch, one of the most common leaf diseases of strawberry. </h3>
+                <br>
+                <p style="background-color: black; color: white; font-size: 1.5rem;">डिप्लोकार्पोन अर्लिअनम ही बुरशी आहे ज्यामुळे पाने जळतात, स्ट्रॉबेरीच्या पानांच्या सर्वात सामान्य रोगांपैकी एक. </p>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+
+<div class ="text2">
+        <h1> Solution for Disease / रोगाचा उपाय </h1>
+        <p><strong>If leaf diseases are a problem in the planting, fungicides will aid in control. However, the emphasis on control of leaf diseases should be placed on the use of resistant varieties. </i></strong></p>
+       
+        <p>लागवड करताना पानांचे रोग एक समस्या असल्यास, बुरशीनाशके नियंत्रणात मदत करतील. मात्र, पानावरील रोगांच्या नियंत्रणासाठी प्रतिरोधक वाणांच्या वापरावर भर द्यावा.</p>
+    </div>
+    </div>
+
+
+
+    <section>
+
+       
+        <div class="container">
+            <P style="padding: 15px; background-color: black; color: white; font-size: 1.5rem;">
+               <br> The following junebearing varieties are reported to be resistant to both leaf spot and leaf scorch: Allstar, Canoga, Cardinal, Delite, Earliglow, Honeoye, Jewell, Lester, Midway and Redchief. The ever bearing varieties, Tribute and Tristar, are reported to be tolerant to leaf spot and leaf scorch. There are no varieties with reported resistance to leaf blight.
+</p>
+        </div>
+        <div class="container">
+            <P style="padding: 15px; background-color: black; color: white; font-size: 1.5rem;">
+               <br>खालील ज्युनबीअरिंग वाण पानांचे ठिपके आणि पानांच्या जळजळीला प्रतिरोधक आहेत: ऑलस्टार, कॅनोगा, कार्डिनल, डेलाइट, अर्लिग्लो, होनोये, ज्वेल, लेस्टर, मिडवे आणि रेडचीफ. ट्रिब्युट आणि ट्रिस्टार या सदैव धारण करणार्‍या जाती, पानावरील डाग आणि पानांची जळजळ सहनशील असल्याचे नोंदवले जाते. पानांच्या फुशारकीस प्रतिकार करणारे कोणतेही वाण नाहीत.
+            </p>
+        </div>
+        <div class="container">
+            <h1 style="padding: 15px; background-color: black; color: white ; font-size: 2rem;"
+                class="text-center my-3 content-h1">
+                Recommended Medicines/औषधे</h1>
+        </div>
+        <div class="container">
+
+
+            <div class="card-columns">
+                <div class="card ">
+                    <div class="card-body text-left card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/sls3.webp" alt="">
+                        <h3 class="card-text">Foliar application 0.5-1 gm /lit	after 10-15 days of interval/10-15 दिवसांच्या अंतराने 0.5-1 gm/li
+                        </h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-left card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/sls2.webp" alt="">
+                        <h3 class="card-text">Drenching Application: 3 ml of the product in 1 lit. water applied over the crops by drenching
+                            Soil Treatement : 0.5 to 1 litre of the product mixed with 25 kg. farm yard manure applied to the soil prior to sowing or post sowing./ ड्रेंचिंग ऍप्लिकेशन: 1 लिटरमध्ये उत्पादनाचे 3 मि.ली. भिजवून पिकांवर पाणी घातले
+                            माती प्रक्रिया : 0.5 ते 1 लिटर उत्पादनात 25 किलो मिसळावे. शेतातील शेणखत पेरणीपूर्वी किंवा पेरणीनंतर जमिनीत टाकावे.
+                        </h3>
+                    </div>
+                </div>             
+                <div class="card">
+                    <div class="card-body text-left card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/sls1.webp" alt="">
+                        <h3 class="card-text">Use 100gm of Eco Safe in 15 Liter of water and spray using foliar spray on both side of leaves./15 लिटर पाण्यात 100 ग्रॅम इको सेफ वापरा आणि पानांच्या दोन्ही बाजूला पर्णासंबंधी स्प्रे वापरून फवारणी करा.
+                        </h3>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- <div class="container-fluid contents"> -->
+        </div>
+        <div class="text"><a href="/">Go Back</a></div>
+    </section>
+
+</body>
+
+</html>

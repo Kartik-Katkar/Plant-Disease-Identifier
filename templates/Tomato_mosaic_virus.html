@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="../static/images/leaf4.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <title>PLANT DISEASE PREDICTION</title>
+
+    <style>
+        * {
+            
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .card-style {
+            background-color: #dcdcdc;
+
+        }
+
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+
+        @media (max-width: 430px) and (min-width: 200px) {
+
+
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+
+            .content-h1 {
+
+                font-size: 1rem;
+            }
+        }
+
+        .border img {
+            border: 2px solid black;
+        }
+        body{
+            background: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../static/images/pl4.jpg");
+    background-size: cover;
+        }
+        *, *:before, *:after{
+            font-family: 'Poppins', sans-serif;
+        }
+        .text2{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .text a:hover {
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 43.3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    <!-- <img src="{{pred_output}}" alt="User Image" class="img-thumbnail"> -->
+
+
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: black; color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <h3 style="padding: 15px; background-color: black; color: white;"
+                class="text-center mb-5 content-h1 rounded">
+                The virus may be introduced on infected seed. Only a small number of seedlings need to be infected for the virus to spread rapidly. It can also be spread on contaminated tools and the clothing and hands of workers during routine activities.</h3>
+                <br>
+                <p style="background-color: black; color: white; font-size: 1.5rem;">टोमॅटोवरील व्हायरसचे सामान्य वाहक -आणि संभाव्य उत्पन्न मिळण्यातले अडथळे- म्हणजे पांढरी माशी आणि फुलकिडे (थ्रिप्स). वेळीच पायबंद न घातल्यास हे व्हायरस 95% आर्थिक नुकसानाला कारणीभूत ठरू शकतात आणि म्हणूनच सुरवातीपासूनच वाहक कीटकांवर नियंत्रण ठेवणे महत्वाचे ठरते. </p>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+
+<div class ="text2">
+        <h1> Solution for Disease / रोगाचा उपाय </h1>
+        <p><strong>Proper and timely care is important for pest and disease control in tomatoes. This not only prevents the spread of the disease but also promotes the growth of the crop and produces immune plants throughout its life cycle. In this way the crops meet their expectations and produce a vigorous, healthy and succulent crop.</i></strong></p>
+       
+        <p>टोमॅटोवरील कीड  व रोग यांच्या नियंत्रणासाठी योग्य आणि वेळीच घेतलेली काळजी महत्वाची असते. यातून रोगाची लागण होणे तर टळतेच पण त्यातून पिकाच्या वाढीला प्रोत्साहन मिळून आपल्या संपूर्ण जीवनचक्रात रोगप्रतिकारकशक्ती राहणारी रोपे तयार होतात. अशा रीतीने पिके त्यांच्याकडून असणार्‍या अपेक्षा पूर्ण करतात आणि जोमदार, निरोगी आणि रसरशीत पीक येते.</p>
+    </div>
+    </div>
+
+
+
+    <section>
+
+       
+        <div class="container">
+            <P style="padding: 15px; background-color: black; color: white; font-size: 1.5rem;">
+               <br>
+-Create a healthy nursery/निरोगी रोपवाटिका तयार करा.<br> -Use varieties with immune system/रोगप्रतिकारक शक्ती असणारी वाणे वापरा.<br> -Protect the nursery already from carrier insects/वाहक किडींपासून आधीच रोपवाटिकेचे संरक्षण करा.<br> -Increase plant immunity by proper nutrition and water management/योग्य पोषण आणि पाण्याचे व्यवस्थापन करून रोपांची रोगप्रतिकारक शक्ती वाढवा.<br> -Provide complete nutrition management to your plants/तुमच्या रोपांना संपूर्ण पोषण व्यवस्थापन प्रदान करा.<br> -See that there will be sterile planting. Avoid spreading the disease by removing infected seedlings/निर्जंतुक लागवड होईल असे बघा. व्हायरसची बाधा झालेली रोपे काढून टाकून रोगाचा फैलाव होणे टाळा.</p>
+        </div>
+        <div class="container">
+            <h1 style="padding: 15px; background-color: black; color: white ; font-size: 2rem;"
+                class="text-center my-3 content-h1">
+                Recommended Medicines/औषधे</h1>
+        </div>
+        <div class="container">
+
+
+            <div class="card-columns">
+                <div class="card ">
+                    <div class="card-body text-left card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/tommos.webp" alt="">
+                        <h3 class="card-text">1st spray : No Virus Tomato & Cucurbit 3-5 ml / lit + Tabsil 1 gm/lit + insecticide (If the virus transmitted by Insect vector) through the spray.<br> 2nd spray after 4 days of 1st spray : No virus Tomato & Cucurbit 3-5 ml / lit + Vigore 1gm /lit.<br> 3rd spray : Repeat after 10-15 days of application.<br>पहिली फवारणी : विषाणू नाही टोमॅटो आणि कुकरबिट 3-5 मिली / लिटर + टॅब्सिल 1 ग्रॅम / लिटर + कीटकनाशक (जर विषाणू कीटक वेक्टरद्वारे प्रसारित केले असल्यास). & Cucurbit 3-5 ml / lit + Vigore 1gm / lit.<br> तिसरी फवारणी : 10-15 दिवसांनी पुन्हा करा.</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-left card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/tommos3.jpg" alt="">
+                        <h3 class="card-text">Curative 2 Sprays at 4 days interval & then repeat the spray for every 15 days...<br> Preventive Spray every 15 Days, Repeat every 15 Days..<br>Dosage:- 5Ml / Ltr of water.<br>Application Method:- Foliar Spray./उपचारात्मक 2 फवारण्या 4 दिवसांच्या अंतराने करा आणि नंतर दर 15 दिवसांनी फवारणी पुन्हा करा. प्रतिबंधात्मक फवारणी दर 15 दिवसांनी, दर 15 दिवसांनी पुनरावृत्ती करा. डोस:- 5 मिली / लिटर पाणी. अर्ज पद्धत:- पर्णासंबंधी फवारणी.</h3>
+                    </div>
+                </div>             
+                <div class="card">
+                    <div class="card-body text-left card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/tommos2.jpg" alt="">
+                        <h3 class="card-text">3 ml/liter water by spraying. Spray every 7 -10 days after transplantation.<br>Also add, micronutrient and insecticide for controlling sucking pest along.<br>3 मिली/लिटर पाणी फवारणी करून. प्रत्यारोपणानंतर दर 7-10 दिवसांनी फवारणी करा. तसेच शोषक कीटक नियंत्रणासाठी सूक्ष्म अन्नद्रव्ये आणि कीटकनाशके घाला.</h3>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- <div class="container-fluid contents"> -->
+        </div>
+        <div class="text"><a href="/">Go Back</a></div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAF DISEASE DETECTION</title>
+    <link rel="icon" href="../static/images/leaf4.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1;
+    background: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../static/images/1.jpg");
+    background-size: cover;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Poppins', sans-serif;
+   }
+  
+  
+ 
+  .row{
+      margin-left: 4em;
+      display: inline-block;
+  }
+  .column {
+    display: inline-block;
+    margin-bottom: 9em;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 4px;
+    display: inline-block;
+  }
+  
+  .about-section {
+    padding: 1px;
+    text-align: center;
+    color: whitesmoke;
+  }
+  .about-section h2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .container {
+    padding: 0 5px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  .button:hover {
+    color: black;
+    background-color: white;
+    width: 90%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 230px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    background-size: cover;
+  }
+
+  .text a:hover {
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 43.3em;
+  
+  }
+
+
+</style>
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <!-- <p>Resize the browser window to see that this page is responsive by the way.</p> -->
+        <h2 style="text-align:center">Our Team</h2>
+    </div>
+    <section>
+
+           
+    
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="#" alt="image" style="width: 200px;height:230px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <div class="container">
+            
+                                                <h2>Kartik Katkar</h2>
+                                                <p >Project Lead</p>
+                                                <p>FY student at VIT pune</p>
+                                                <a href="mailto:kartikkatkar01@gmail.com"><p>kartikkatkar01@gmail.com</p></a>
+                                                <a href="https://www.linkedin.com/in/kartik-katkar/"><p><button class="button">CONNECT</button></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="../static/images/kaushik.jpg" alt="Avatar"
+                                                    style="width: 200px;height:230px;">
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="container">
+
+                                                    <h2>Kaushik Magar</h2>
+                                                    <p class="title">Testing and debugging<br>data collection</p>
+                                                    <p>FY student at VIT pune</p>
+                                                    <a href="mailto:yogesh.kaushik21@vit.edu"><p>kaushik.magar21@vit.edu</p></a>
+                                                    <p><button class="button">CONNECT</button></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="flip-card">
+                                            <div class="flip-card-inner">
+                                                <div class="flip-card-front">
+                                                    <img src="../static/images/mayuresh.jpeg" alt="Avatar"
+                                                        style="width: 200px;height:230px;">
+                                                </div>
+                                                <div class="flip-card-back">
+                                                    <div class="container">
+            
+                                                        <h2>Mayuresh Kaulwar</h2>
+                                                        <p class="title">Data Collection<br>explore page</p>
+                                                        <p>FY student at VIT pune</p>
+                                                        <a href="mailto:mayuresh.kaulwar21@vit.edu"><p>mayuresh.kaulwar21@vit.edu</p></a>
+                                                        <p><button class="button">CONNECT</button></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    </section>
+    <div class="text"><a href="/">Go Back</a></div>
+
+</body>
+
+</html>

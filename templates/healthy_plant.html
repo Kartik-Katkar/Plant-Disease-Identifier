@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/leaf4.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <title>PLANT DISEASE PREDICTION</title>
+
+
+    <style>
+          body{
+            background: fixed;
+    background-repeat: no-repeat;
+    background-image: url("../static/images/pl4.jpg");
+    background-size: cover;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+        .text a:hover {
+    background-color: black;
+    color: whitesmoke;
+  }
+
+  .text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    margin-left: 43.3em;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+    </style>
+</head>
+
+<body>
+
+   
+
+    <div class="container my-2">
+        <div class="row mb-5">
+
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    
+                </span>
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h1 style="padding: 15px; background-color: black; color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+                <div class="details">
+
+                    <h5 style="padding: 15px; background-color: black; color: white; font-size: larger;">
+
+                        There is no disease on the Plant.</br></br>
+                        झाडावर कोणताही रोग नाही आहे. </br></br>
+                        
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="text"><a href="/">Go Back</a></div>
+</body>
+
+</html>
