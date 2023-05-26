@@ -34,7 +34,7 @@ Then simply copy and paste the development server on your local browser
   <img width="700" align="center" src="./README%20FILES/6.png" alt="Python main.py"/>
 </p>
 <p align="center">
-  <img width="700" align="center" src="https://github.com/Kartik-Katkar/Web-Projects/blob/main/Plant%20Disease%20Identifier/README%20FILES/7.png" alt="Python main.py"/>
+  <img width="700" align="center" src="./README%20FILES/7.png" alt="Python main.py"/>
 </p>
 
 The follwing video shows the working of the Project 
