@@ -37,10 +37,10 @@ Then simply copy and paste the development server on your local browser
   <img width="700" align="center" src="./README%20FILES/7.png" alt="Python main.py"/>
 </p>
 
-The follwing video shows the working of the Project 
+<!-- The follwing video shows the working of the Project 
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
     <source src="./README FILES/LEAF DISEASE DETECTION - Google Chrome 2022-12-30 12-51-28_compressed.mp4" type="video/mp4">
   </video>
-</figure>
+</figure> -->
